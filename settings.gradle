@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DeliveryAPP"
 include ':app'
+include ':express_library'

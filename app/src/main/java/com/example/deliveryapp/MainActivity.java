@@ -1,5 +1,6 @@
 package com.example.deliveryapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -10,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.deliveryapp.databinding.ActivityMainBinding;
+import com.example.express_library.ExpressActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.textViewId.setOnClickListener(view -> {
-
+            startActivities(new Intent[]{new Intent(this, ExpressActivity.class)});
         });
     }
 }
